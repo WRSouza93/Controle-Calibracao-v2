@@ -1,0 +1,278 @@
+/* === VARIÁVEIS DE CORES === */
+:root {
+  --primary-color: #000a19;
+  --secondary-color: #ffffff;
+  --accent-color: #f8931e;
+  --primary-hover: #001a33;
+  --accent-hover: #e6831a;
+  --text-light: #f8f9fa;
+  --text-dark: #000a19;
+  --border-color: #dee2e6;
+  --shadow: 0 2px 4px rgba(0, 10, 25, 0.1);
+}
+
+/* === ESTILOS GERAIS === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+/* === NAVBAR === */
+.navbar-custom {
+  background-color: var(--primary-color) !important;
+  box-shadow: var(--shadow);
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--secondary-color) !important;
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+  color: var(--secondary-color) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: var(--accent-color);
+}
+
+/* === BOTÕES === */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--secondary-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* === CARDS === */
+.card {
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 10, 25, 0.15);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.card-title {
+  color: var(--primary-color);
+}
+
+/* === FORMULÁRIOS === */
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(248, 147, 30, 0.25);
+}
+
+.form-label {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* === TABELAS === */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(248, 147, 30, 0.05);
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(248, 147, 30, 0.1);
+}
+
+/* === ALERTAS === */
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffeaa7;
+  color: #856404;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  color: #0c5460;
+}
+
+/* === BADGES === */
+.badge-primary {
+  background-color: var(--primary-color);
+}
+
+.badge-accent {
+  background-color: var(--accent-color);
+}
+
+/* === SIDEBAR (se necessário) === */
+.sidebar {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.sidebar .nav-link {
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  color: var(--accent-color);
+  background-color: rgba(248, 147, 30, 0.1);
+}
+
+/* === DASHBOARD === */
+.dashboard-card {
+  border-left: 4px solid var(--accent-color);
+}
+
+.dashboard-icon {
+  color: var(--accent-color);
+}
+
+/* === LOADING SPINNER === */
+.spinner-border-custom {
+  color: var(--accent-color);
+}
+
+/* === LINKS === */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* === BREADCRUMB === */
+.breadcrumb {
+  background-color: rgba(248, 147, 30, 0.1);
+}
+
+.breadcrumb-item.active {
+  color: var(--primary-color);
+}
+
+/* === TOGGLE BUTTON === */
+.toggle-button {
+  background-color: var(--border-color);
+  border: 2px solid var(--border-color);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-brand {
+    font-size: 1.1rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* === ANIMAÇÕES === */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === ESTILO PARA CAMPOS OBRIGATÓRIOS === */
+.required-field::after {
+  content: " *";
+  color: #dc3545;
+}
+
+/* === ESTILO PARA RBC === */
+.rbc-badge {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* === ESTILO PARA CALIBRAÇÃO === */
+.calibracao-required {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.calibracao-not-required {
+  color: #6c757d;
+}
